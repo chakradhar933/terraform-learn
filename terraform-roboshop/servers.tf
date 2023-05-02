@@ -1,7 +1,7 @@
 data "aws_ami" "centos" {
+  owners           = ["973714476881"]
   most_recent      = true
   name_regex       = "Centos-8-DevOps-Practice"
-  owners           = ["973714476881"]
 }
 output "ami" {
     value= data.aws_ami.centos.image_id
@@ -11,15 +11,12 @@ output "ami" {
 resource "aws_instance" "frontend-01" {
   ami                     = "data.aws_ami.centos.image_id"
   instance_type           = "t2.micro"
+  
   tags = {
     Name = "frontend-01"
   }
 }
 
-
-output "frontend-01" {
-  value       = aws_instance.frontend-01.public_ip
-}
 
 resource "aws_instance" "mongodb-02" {
   ami                     = "data.aws_ami.centos.image_id"
