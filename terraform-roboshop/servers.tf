@@ -8,8 +8,8 @@ resource "aws_instance" "frontend-01" {
 }
 
 
-output "frontend" {
-  value       = aws_instance.frontend.public_ip
+output "frontend-01" {
+  value       = aws_instance.frontend-01.public_ip
 }
 
 resource "aws_instance" "mongodb-02" {
