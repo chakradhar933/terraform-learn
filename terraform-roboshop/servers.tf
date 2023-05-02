@@ -7,6 +7,11 @@ resource "aws_instance" "frontend-01" {
   }
 }
 
+
+output "frontend" {
+  value       = aws_instance.frontend.public_ip
+}
+
 resource "aws_instance" "mongodb-02" {
   ami                     = "ami-0b5a2b5b8f2be4ec2"
   instance_type           = "t2.micro"
