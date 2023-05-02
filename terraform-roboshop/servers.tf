@@ -19,7 +19,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "frontend-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -36,7 +36,7 @@ resource "aws_instance" "mongodb" {
   }
 }
 resource "aws_route53_record" "mongodb" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "mongodb-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -53,7 +53,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "user-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -70,7 +70,7 @@ resource "aws_instance" "cart" {
 }
 
 resource "aws_route53_record" "cart" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "cart-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -87,7 +87,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "catalogue-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -104,7 +104,7 @@ resource "aws_instance" "mysql" {
 }
 
 resource "aws_route53_record" "mysql" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "mysql-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -121,7 +121,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "rabbitmq-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -140,7 +140,7 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "shipping-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -157,7 +157,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "payment-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -174,7 +174,7 @@ resource "aws_instance" "dispatch" {
 }
 
 resource "aws_route53_record" "dispatch" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "dispatch-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
@@ -191,7 +191,7 @@ resource "aws_instance" "redis" {
 }
 
 resource "aws_route53_record" "redis" {
-  zone_id = "Z0280955CDQLYUMXA2P2"
+  zone_id = "Z0246811XH3HRK0AWHVN"
   name    = "redis-dev.perrie.cloud"
   type    = "A"
   ttl     = 300
