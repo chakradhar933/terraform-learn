@@ -21,6 +21,9 @@ output "frontend" {
     value = aws_instance.frontend.public_ip
    # value = aws_instance.frontend.instance_type
 }
+output "frontend" {
+    value = aws_instance.frontend.instance_type
+}
 
 resource "aws_route53_record" "frontend" {
   zone_id = "Z0246811XH3HRK0AWHVN"
