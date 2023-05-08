@@ -30,7 +30,6 @@ resource "aws_route53_record" "frontend" {
   records = [aws_instance.frontend.public_ip]
 }
 
-
 resource "aws_instance" "mongodb" {
   ami                     = data.aws_ami.centos.image_id
   instance_type           = "t2.micro"
