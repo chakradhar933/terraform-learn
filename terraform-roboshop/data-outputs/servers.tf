@@ -40,7 +40,7 @@ resource "aws_instance" "mongodb" {
   }
 }
 output "mongodb" {
-    value = aws_instance.mongodb.instance_type.public_ip
+    value = aws_instance.mongodb.instance_type
 }
 resource "aws_route53_record" "mongodb" {
   zone_id = "Z0246811XH3HRK0AWHVN"
